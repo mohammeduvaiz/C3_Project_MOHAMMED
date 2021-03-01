@@ -79,11 +79,11 @@ class RestaurantTest {
 //        int totalCartValue = restaurant.totalPrice();
 //        assertEquals(totalCartValue,restaurant.totalPrice());
 //    }
-//    @Test
-//    public void cart_items_should_return_false_if_no_items_are_added_in_cart(){
-//        restaurant =new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime);
-//        boolean result=restaurant.cartItems();
-//        assertEquals(false,result);
-//    }
+    @Test //Failed test case for cartItem , if no items are added in cart
+    public void cart_items_should_return_false_if_no_items_are_added_in_cart(){
+        restaurant =new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime);
+        boolean result=restaurant.cartItems();
+        assertEquals(false,result);
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<CART TOTAL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }

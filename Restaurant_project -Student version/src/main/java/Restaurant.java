@@ -54,11 +54,11 @@ public class Restaurant {
 //        }
 //      return total;
 //    }
-//    public boolean cartItems(){
-//        if (cart.size() != 0) {
-//            return true;
-//        } else return false;
-//    }
+    public boolean cartItems(){
+        if (cart.size() != 0) {
+            return true;
+        } else return false;
+    }
 
     public void removeFromMenu(String itemName) throws itemNotFoundException {
 
