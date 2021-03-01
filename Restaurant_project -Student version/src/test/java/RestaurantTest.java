@@ -70,15 +70,15 @@ class RestaurantTest {
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>CART TOTAL<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-//    @Test
-//    public void calculating_total_price_of_items_added_in_cart(){
-//        restaurant =new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime);
-//        restaurant.addToCart("Sweet corn soup",119);
-//        restaurant.addToCart("Vegetable lasagne", 269);
-//        restaurant.addToCart("Sizzling brownie",319);
-//        int totalCartValue = restaurant.totalPrice();
-//        assertEquals(totalCartValue,restaurant.totalPrice());
-//    }
+    @Test //pass case test for total cart value
+    public void calculating_total_price_of_items_added_in_cart(){
+        restaurant =new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime);
+        restaurant.addToCart("Sweet corn soup",119);
+        restaurant.addToCart("Vegetable lasagne", 269);
+        restaurant.addToCart("Sizzling brownie",319);
+        int totalCartValue = restaurant.totalPrice();
+        assertEquals(totalCartValue,restaurant.totalPrice());
+    }
     @Test //Failed test case for cartItem , if no items are added in cart
     public void cart_items_should_return_false_if_no_items_are_added_in_cart(){
         restaurant =new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime);

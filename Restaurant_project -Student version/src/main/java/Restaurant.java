@@ -42,18 +42,18 @@ public class Restaurant {
         menu.add(newItem);
     }
 
-//    public void addToCart(String name,int price){
-//        Item cartItem=new Item(name,price);
-//        cart.add(cartItem);
-//    }
-//
-//    public int totalPrice(){
-//        int total=0;
-//        for(Item item:cart){
-//            total+=item.getPrice();
-//        }
-//      return total;
-//    }
+    public void addToCart(String name,int price){
+        Item cartItem=new Item(name,price);
+        cart.add(cartItem);
+    }
+
+    public int totalPrice(){
+        int total=0;
+        for(Item item:cart){
+            total+=item.getPrice();
+        }
+      return total;
+    }
     public boolean cartItems(){
         if (cart.size() != 0) {
             return true;
